@@ -42,7 +42,7 @@ pipeline{
         stage("Continous Delivery"){
             steps{
                 script{
-                    sh 'cp -r /root/.jenkins/workspace/SIELI/ /var/wwww/html/'
+                    sh 'cp -r /root/.jenkins/workspace/SIELI/ /var/www/html/'
                 }
             }
         }
