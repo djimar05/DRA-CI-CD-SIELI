@@ -38,5 +38,13 @@ pipeline{
             }
 
         }
+
+        stage("Continous Delivery"){
+            steps{
+                script{
+                    sh 'cp -r /root/.jenkins/workspace/SIELI/ /var/wwww/html/'
+                }
+            }
+        }
     }
 }
